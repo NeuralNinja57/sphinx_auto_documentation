@@ -227,7 +227,7 @@ if __name__ == "__main__":
                         help="Specify the version tag of the project")
     parser.add_argument('-t', '--theme', default='alabaster', type=str,
                         choices=['alabaster', 'sphinx_rtd_theme'],
-                        help="Specify the HTML theme for the project")
+                        help="Specify the HTML theme for the project documentation")
     parsed_args = parser.parse_args()
     sphinx_obj = SphinxAutoDocument(orchestrator=parsed_args.orchestrator,
                                     docs_folder_name=parsed_args.docs)
